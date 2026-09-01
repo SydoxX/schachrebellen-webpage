@@ -5,6 +5,18 @@
           content="text/html; charset=utf-8">
     <title>Schachverein Schachrebellen</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        fetch("https://schachrebellen-counter.471158.xyz")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("visitorCounter").textContent =
+                    String(data.visits).padStart(6, "0");
+            })
+            .catch(() => {
+                document.getElementById("visitorCounter").textContent =
+                    "000000";
+            });
+    </script>
 </head>
 <body>
 <div class="page">
@@ -82,16 +94,4 @@
     </div>
 </div>
 </body>
-<script type="text/javascript">
-    fetch("https://schachrebellen-counter.471158.xyz")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("visitorCounter").textContent =
-                String(data.visits).padStart(6, "0");
-        })
-        .catch(() => {
-            document.getElementById("visitorCounter").textContent =
-                "000000";
-        });
-</script>
 </html>
