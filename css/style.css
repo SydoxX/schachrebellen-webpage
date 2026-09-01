@@ -1,0 +1,165 @@
+body {
+    background-color: #003366;
+    margin: 0;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.page {
+    width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 3px ridge #cccccc;
+}
+
+.header {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 8px;
+    border-bottom: 3px ridge #999999;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 5px 0 0 0;
+}
+
+.nav {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #666666;
+}
+
+.nav a {
+    display: inline-block;
+    background-color: #eeeeee;
+    border: 2px outset #ffffff;
+    padding: 4px 12px;
+    margin: 1px;
+    color: #000066;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    border-style: inset;
+    color: #ff0000;
+}
+
+.content {
+    padding: 14px 18px 20px;
+    min-height: 390px;
+}
+
+h2,
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    color: #003366;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.box {
+    border: 1px solid #777777;
+    background-color: #f5f5f5;
+    margin: 12px 0;
+}
+
+.box-title {
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 4px 7px;
+}
+
+.box-content {
+    padding: 8px;
+}
+
+.notice {
+    background-color: #ffffcc;
+    border: 1px solid #999900;
+    padding: 10px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.news-date {
+    color: #990000;
+    font-weight: bold;
+}
+
+.counter {
+    display: inline-block;
+    background-color: #000000;
+    color: #00ff00;
+    padding: 3px 7px;
+    font-family: "Courier New", monospace;
+    border: 2px inset #cccccc;
+}
+
+.footer {
+    background-color: #cccccc;
+    border-top: 3px ridge #999999;
+    text-align: center;
+    padding: 9px;
+    font-size: 10px;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.simple {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.simple th,
+.simple td {
+    border: 1px solid #888888;
+    padding: 6px;
+}
+
+.simple th {
+    background-color: #cccccc;
+}
+
+.gallery {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.gallery td {
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.photo {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    background-color: #dddddd;
+    border: 3px ridge #aaaaaa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    color: #333333;
+}

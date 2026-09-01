@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8">
+    <title>Schachverein Schachrebellen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <h1>♔ Schachrebellen ♚</h1>
+        <p>
+            Die offizielle Homepage unseres Schachvereins
+        </p>
+    </div>
+    <div class="nav">
+        <a href="index.html">STARTSEITE</a>
+        <a href="verein.html">VEREIN</a>
+        <a href="turniere.html">TURNIERE</a>
+        <a href="bilder.html">BILDER</a>
+        <a href="impressum.html">KONTAKT</a>
+    </div>
+    <div class="content">
+        <h2>Willkommen auf unserer Homepage!</h2>
+        <p>
+            Herzlich Willkommen bei den
+            <b>Schachrebellen</b>.
+        </p>
+        <p>
+            Auf diesen Seiten finden Sie Informationen über unseren
+            Verein, unsere Turniere und einige Bilder aus unserem
+            Vereinsleben.
+        </p>
+        <div class="notice">
+            <b>★ !!! NEU !!! ★</b>
+            <br><br>
+            Unsere Homepage ist jetzt online!
+        </div>
+        <div class="box">
+            <div class="box-title">
+                Aktuelles
+            </div>
+            <div class="box-content">
+                <p>
+                    <span class="news-date">
+                        22.08.2026
+                    </span>
+                    <br>
+                    <b>5. Katswimmer Schachchampionat </b>
+                    <br>
+                    Die Anmeldung für unser nächstes Turnier
+                    ist eröffnet. Klickt <a href="turniere.html">hier</a>!
+                </p>
+                <!--
+                <hr>
+                <p>
+                    <span class="news-date">
+                        29.07.2002
+                    </span>
+                    <br>
+                    <b>Homepage online</b>
+                    <br>
+                    Nach langer Arbeit ist unsere neue
+                    Internetseite endlich erreichbar.
+                </p>
+                -->
+            </div>
+        </div>
+        <h3>Viel Spaß auf unseren Seiten!</h3>
+        <p>
+            Schauen Sie sich ruhig etwas um. Weitere Inhalte
+            werden in Zukunft noch hinzukommen.
+        </p>
+    </div>
+    <div class="footer">
+        Schachverein Schachrebellen
+        <br><br>
+        Besucher: <span class="counter" id="visitorCounter">Loading...</span>
+        <br><br>
+        Letzte Aktualisierung: 01.09.2026
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    fetch("https://schachrebellen-counter.471158.xyz")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("visitorCounter").textContent =
+                String(data.visits).padStart(6, "0");
+        })
+        .catch(() => {
+            document.getElementById("visitorCounter").textContent =
+                "000000";
+        });
+</script>
+</html>
